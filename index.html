@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="burger">
+      <i class="bi bi-list"></i>
+    </div>
+
+    <div class="wrapper">
+      <div class="form">
+        <h3 class="center">Jelentekzés</h3>
+        <input type="text" id="name" name="name" placeholder="Név" required />
+        <input type="email" id="email" name="email" placeholder="Email cím" />
+        <input type="text" id="phone" name="phone" placeholder="Telefonszám" />
+        <div class="agreed center">
+          <input type="checkbox" id="agree" name="agree" />
+          <span>Elolastam és elfogadom az <a class="link" href="#">Adatkezelési Tájékoztatót</a></span>
+        </div>
+        <div class="center">
+            <input
+            type="submit"
+            id="btn_submit"
+            class="btn_submit"
+            value="ELKÜLD"
+            />
+         </div>
+      </div>
+    </div>
+  </body>
+</html>

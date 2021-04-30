@@ -1,0 +1,93 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  * {
+  margin: 10px;
+  border: 1px dashed red;
+} 
+ */
+body {
+  background-color: $background;
+  .burger {
+    background-color: $green;
+    font-size: 3em;
+    font-weight: bolder;
+    border-radius: 50%;
+    padding: 15px 15px 10px;
+    color: $white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .center {
+    text-align: center;
+  }
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form {
+    max-width: 600px;
+    width: -499px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    font-size: 1.5em;
+    h3 {
+      color: $green;
+    }
+    input {
+      padding: 15px;
+      color: $green;
+     // font-size: 1.1em;
+      &::placeholder{
+        color: $green;
+      }
+
+    }
+    .agreed {
+      text-align: center;
+      color:$green;
+    }
+    .link{
+        color:$green;
+    }
+    .btn_submit {
+      color: $white;
+      background-color: $green;
+      width: 80%;
+      outline:none;
+      border:1px solid $white;
+      text-align: center;
+      padding:30px ;
+    }
+  }
+}
+
+
+@media (max-width: 800px){
+    
+    .form{
+        padding:20px;
+        h3{
+            margin-top: 50px;
+            text-align: right;
+        }
+        .agreed{
+            //text-align: left !important;
+            #agree{
+                float:left;
+                position: relative;
+                top:20px;
+            }
+         
+        }
+    }
+}
